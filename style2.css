@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #007acc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.8rem;
+  background: #00cc4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+  display: block;
+  color: #333;
+}
+
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todo-container input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todo-container button {
+  padding: 0.8rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#taskList li {
+  background: #e0f7fa;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#taskList li button {
+  background: #ff5252;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #007acc;
+  color: white;
+  margin-top: 2rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
